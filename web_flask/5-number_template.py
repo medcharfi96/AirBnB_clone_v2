@@ -46,8 +46,7 @@ def HTML_root(n):
     """
     return:  template if n is true
     """
-    if isinstance(n, int):
-            return render_template("5-number.html", n=n)
+    return render_template("5-number.html", n=n)
 
 
 @app.route('/python', strict_slashes=False)
