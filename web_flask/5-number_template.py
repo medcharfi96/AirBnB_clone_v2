@@ -46,7 +46,7 @@ def HTML_root(n):
     """
     return:  template if n is true
     """
-    if n is int:
+    if isinstance(n, int):
             return render_template("5-number.html", n=n)
 
 
