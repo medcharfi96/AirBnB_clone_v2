@@ -25,7 +25,7 @@ def only_HBNB():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def C_replace_text():
+def C_replace_text(text):
     """
     return : c is text
     """
