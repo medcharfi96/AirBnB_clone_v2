@@ -52,19 +52,10 @@ def HTML_root(n):
 @app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def ODD_root(n):
     """
-    return : h with n  given
+    return : if is odd  with n  given
     """
     return (render_template("6-number_odd_or_even.html", n=n))
 
-
-@app.route('/python', strict_slashes=False)
-@app.route('/python/<text>', strict_slashes=False)
-def Python_replace_text(text='is cool'):
-    """
-    return : Python is text
-    """
-    text_to_replace = text.replace("_", " ")
-    return 'Python ' + text_to_replace
 
 if __name__ == '__main__':
         app.run(host='0.0.0.0', port=5000)
